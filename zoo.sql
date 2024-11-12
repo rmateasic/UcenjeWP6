@@ -14,14 +14,14 @@
 --vrsta varchar(50),
 --ime varchar(30),
 --djelatnik int,
---prostorija int,
+
 --datum int
 --);
 
 --create table prostorija(
 --sifra int,
 --dimenzije varchar(30),
---maks_broj int,
+
 --mjesto varchar(30)
 --);
 
@@ -34,7 +34,7 @@
 
 --create table djelatnik(
 --sifra int,
---ime varchar(50),
+
 --prezime varchar(50),
 --iban varchar(100)
 --);
