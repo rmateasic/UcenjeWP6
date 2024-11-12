@@ -21,9 +21,16 @@
 --mjesto varchar(30)
 --);
 
-create table datum(
-d_rodenja datetime,
-d_dolaska datetime,
-d_smrti datetime,
-sifra int
+--create table datum(
+--d_rodenja datetime,
+--d_dolaska datetime,
+--d_smrti datetime,
+--sifra int
+--);
+
+create table djelatnik(
+sifra int,
+ime varchar(50),
+prezime varchar(50),
+iban varchar(50)
 );
