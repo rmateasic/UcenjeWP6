@@ -14,9 +14,16 @@
 --datum int
 --);
 
-create table prostorija(
-sifra int,
-dimenzije varchar(30),
-maks_broj int,
-mjesto varchar(30)
+--create table prostorija(
+--sifra int,
+--dimenzije varchar(30),
+--maks_broj int,
+--mjesto varchar(30)
+--);
+
+create table datum(
+d_rodenja datetime,
+d_dolaska datetime,
+d_smrti datetime,
+sifra int
 );
