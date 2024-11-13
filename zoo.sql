@@ -14,7 +14,7 @@
 --vrsta varchar(50),
 --ime varchar(50),
 --djelatnik int,
---prostorija int
+--prostorija int,
 --datum int
 --);
 
@@ -34,7 +34,7 @@
 
 --create table djelatnik(
 --sifra int,
-
+--ime varchar(50),
 --prezime varchar(50),
---iban varchar(100)
+--iban varchar(50)
 --);
