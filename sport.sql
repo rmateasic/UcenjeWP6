@@ -42,3 +42,12 @@ pozicija varchar(50) not null,
 broj_dresa varchar(50) not null,
 klub int not null references klub(sifra)
 );
+
+create table trener(
+sifra int not null primary key identity(1,1),
+ime varchar(50) not null,
+prezime varchar(50) not null,
+nacionalnost varchar(50) not null,
+iskustvo varchar(50) not null,
+klub int not null references klub(sifra)
+);
