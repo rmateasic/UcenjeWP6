@@ -47,7 +47,7 @@ create table trener(
 sifra int not null primary key identity(1,1),
 ime varchar(50) not null,
 prezime varchar(50) not null,
+klub int not null references klub(sifra),
 nacionalnost varchar(50) not null,
-iskustvo varchar(50) not null,
-klub int not null references klub(sifra)
+iskustvo varchar(50) not null
 );
