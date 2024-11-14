@@ -30,5 +30,5 @@ vrijeme datetime,
 lokacija varchar(50) not null,
 stadion varchar(50) not null,
 domaci_klub int not null references klub(sifra),
-gostujuci klub int not null references klub(sifra)
+gostujuci_klub int not null references klub(sifra)
 );
