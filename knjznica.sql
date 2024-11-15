@@ -25,3 +25,10 @@ sifra int not null primary key identity(1,1),
 naziv nvarchar(50) not null,
 aktivan bit
 );
+
+create table mjesto(
+sifra int not null primary key identity(1,1),
+naziv nvarchar(50) not null,
+postanskiBroj nvarchar(10) not null,
+drzava nvarchar(50) not null
+);
