@@ -13,3 +13,7 @@ go
 use knjige;
 go
 
+create table clan(
+sifra int not null primary key identity(11,11),
+clbroj int not null
+);
