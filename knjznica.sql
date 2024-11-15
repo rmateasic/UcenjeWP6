@@ -19,3 +19,9 @@ ime nvarchar(50) not null,
 prezime nvarchar(50) not null,
 datumrodenja datetime
 );
+
+create table izdavac(
+sifra int not null primary key identity(1,1),
+naziv nvarchar(50) not null,
+aktivan bit
+);
