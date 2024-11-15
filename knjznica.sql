@@ -32,3 +32,11 @@ naziv nvarchar(50) not null,
 postanskiBroj nvarchar(10) not null,
 drzava nvarchar(50) not null
 );
+
+create table katalog(
+sifra int not null primary key identity(1,1),
+autor int not null references autor(sifra),
+naslov nvarchar(50) not null,
+izdavac int not null references izdavac(sifra),
+mjesto int not null references mjesto(sifra)
+);
