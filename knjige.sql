@@ -30,3 +30,13 @@ prezime varchar(50) not null,
 adresa varchar(50) not null,
 email varchar(50) not null,
 );
+
+create table knjige(
+sifra int not null primary key identity(11,11),
+naslov varchar(50) not null,
+pisac varchar(50) not null,
+vlasnik int not null references vlasnik(sifra),
+clan int not null references clan(sifra),
+datumpos datetime,
+datumvrac datetime
+);
