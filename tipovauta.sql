@@ -41,3 +41,7 @@ values
 insert into vrsteauta(naziv)
 values
 ('serija');
+
+insert into automobili (nazivauta, gorivo, model, godiste, serija, proizvodjac, vrsteauta)
+values
+('ime_auta', 'gorivo', 'model', null, null, 'proizvodjac', 'vrsteauta');
