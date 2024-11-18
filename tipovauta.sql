@@ -33,3 +33,7 @@ serija varchar(100),
 proizvodjac int not null references proizvodjac(sifra),
 vrsteauta int not null references vrsteauta(sifra)
 );
+
+insert into proizvodjac (naziv, zemlja)
+values 
+('ime_auta', 'ime_zemlje');
