@@ -37,3 +37,7 @@ vrsteauta int not null references vrsteauta(sifra)
 insert into proizvodjac (naziv, zemlja)
 values 
 ('ime_auta', 'ime_zemlje');
+
+insert into vrsteauta(naziv)
+values
+('serija');
