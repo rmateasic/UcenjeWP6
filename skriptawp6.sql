@@ -48,28 +48,28 @@ polaznik int not null references polaznici(sifra)
 );
 
 
---1
+-- 1
 insert into smjerovi (naziv, cijena, izvodiseod, vaucer)
-values ('Web programiranje', 1225.48, '2024-11-06 17:00',1);
+values ('Web programiranje',1225.48,'2024-11-06 17:00',1);
 
-insert into smjerovi (naziv, cijena, izvodiseod, vaucer)
+insert into smjerovi(naziv, cijena, izvodiseod, vaucer)
 values
---2
-('Java programiranje', null, null, null),
---3
-('Serviseri', 800, '2020-01-01', 0);
+-- 2
+('Java programiranje',null,null,null),
+-- 3
+('Serviseri',800,'2020-01-01',0);
 
 
-insert into grupe(naziv, velicinagrupe, smjer)
+insert into grupe(naziv,velicinagrupe,smjer)
 values
---1
-('WP6', 27, 1),
---2
-('WP5', 27, 1),
---3
-('WP7', 27, 1),
---4
-('JP17', 11, 3);
+-- 1
+('WP6',27,1),
+-- 2
+('WP5',27,1),
+-- 3
+('WP7',27,1),
+-- 4
+('JP17',11,3);
 
 
 
@@ -99,8 +99,8 @@ INSERT INTO polaznici (ime, prezime, email) VALUES
 ('Ivan', 'Režan', 'forexivanrezan@gmail.com'),
 ('Antonio', 'Simpf', 'antonijosimpf@gmail.com');
 
-insert into clanovi(grupa, polaznik)
-values (1,1), (1,2),(1,3),(1,4),(1,5),(1,6),(1,7)
-,(1,8),(1,9),(1,10),(1,11),(1,12),(1,13),(1,14),(1,15)
+insert into clanovi (grupa, polaznik)
+values (1,1),(1,2),(1,3),(1,4),(1,5),(1,6),(1,7)
+,(1,8),(1,9),(1,10),(1,11),(1,12),(1,12),(1,14),(1,15)
 ,(1,16),(1,17),(1,18),(1,19),(1,20),(1,21),(1,22),(1,23)
 ,(1,24);
