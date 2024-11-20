@@ -34,14 +34,21 @@ proizvodjac int not null references proizvodjac(sifra),
 vrsteauta int not null references vrsteauta(sifra)
 );
 
-insert into proizvodjac (naziv, zemlja)
-values 
-('ime_auta', 'ime_zemlje');
-
-insert into vrsteauta(naziv)
+insert into proizvodjac(naziv, zemlja)
 values
-('serija');
-
-insert into automobili (nazivauta, gorivo, model, godiste, serija, proizvodjac, vrsteauta)
-values
-('ime_auta', 'gorivo', 'model', null, null, 'proizvodjac', 'vrsteauta');
+--1
+('Bmw', 'Njemacka'),
+--2
+('Mercedes', 'Njemacka'),
+--3
+('Ferrari', 'Italija'),
+--4
+('Alfa_romeo', 'Italija'),
+--5
+('Cupra', 'Spanjolska'),
+--6
+('Seat', 'Spanjolska'),
+--7
+('Renault','Francuska'),
+--8
+('Peugeot', 'Francuska');
