@@ -11,3 +11,10 @@ go
 
 use tipoviauta;
 go
+
+create table proizvodjaci(
+sifra int not null primary key identity(1,1),
+naziv varchar(100) not null,
+zemlja varchar(100) not null
+);
+
