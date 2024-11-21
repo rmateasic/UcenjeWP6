@@ -52,3 +52,7 @@ values
 ('Renault','Francuska'),
 --8
 ('Peugeot', 'Francuska');
+
+insert into vrsteauta(naziv)
+values
+(1),(2),(3),(4),(5),(6),(7),(8);
