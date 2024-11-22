@@ -83,7 +83,16 @@ select*
 from autor a right join katalog b
 on a.sifra=b.autor;
 
+use svastara;
 
+select count(*) from artikli;  -- 52601
+select distinct artikl from ArtikliNaPrimci; -- 52599
+
+select * from artikli where
+sifra not in (select distinct artikl from ArtikliNaPrimci);
+
+delete from artikli where
+sifra=79102;
 
 
 
