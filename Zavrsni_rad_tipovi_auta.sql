@@ -59,7 +59,7 @@ values
 
 insert into automobili(nazivauta, gorivo, model, godiste, proizvodjaci, vrsteauta)
 values
-('Bmw', 'hibrid', 'serija1', '2015' 'Bmw', 'monovolumen'), ('Bmw', 'hibrid', 'serija2', '2015', 'Bmw', 'monovolumen'),
+('Bmw', 'hibrid', 'serija1', '2015', 'Bmw', 'monovolumen'), ('Bmw', 'hibrid', 'serija2', '2015', 'Bmw', 'monovolumen'),
 ('Bmw', 'hibrid', 'serija3', '2018', 'Bmw', 'karavan'), ('Bmw', 'hibrid', 'serija4', '2018', 'Bmw', 'limuzina'),
 ('Bmw', 'hibrid', 'serija5', '2020', 'Bmw', 'karavan'), ('Bmw', 'hibrid', 'serija6', '2020', 'Bmw', 'coupe'),
 ('Bmw', 'hibrid', 'serija7', '2022', 'Bmw', 'suv'), ('Bmw', 'hibrid', 'serija8', '2022', 'Bmw', 'kabriolet'),
