@@ -29,7 +29,6 @@ nazivauta varchar(100) not null ,
 gorivo varchar(100) not null,
 model varchar(100) not null,
 godiste int,
-serija varchar(100),
 proizvodjaci int not null references proizvodjaci(sifra),
 vrsteauta int not null references vrsteauta(sifra)
 );
@@ -55,28 +54,37 @@ values
 
 insert into vrsteauta(naziv)
 values
-(1),(2),(3),(4),(5),(6),(7),(8);
+('serija1'), ('serija2'), ('serija3'), ('serija4'), ('serija5'), ('serija6'), ('serija7'), ('serija8'), 
+('Aklasa'), ('Bklasa'), ('Cklasa'), ('Eklasa'), ('Sklasa'), 
+('F40'), ('F50'), ('Dino'), ('Enzo'), 
+('Giulia'), ('Giulietta'), ('Spider'), ('Stelvio'), ('GTV'), 
+('Alteca'), ('Born'), ('Formentor'), ('Leon'), 
+('Ibiza'), ('Cordoba'), ('Malaga'), ('Toledo'), 
+('Megan'), ('Talisman'), ('Capture'), ('Fluence'), 
+('208'), ('308'), ('408'), ('508'), 
+('2008'), ('3008'), ('4008'), ('5008');
 
-insert into automobili(nazivauta, gorivo, model, godiste, serija, proizvodjaci, vrsteauta)
+
+insert into automobili(nazivauta, gorivo, model, godiste, proizvodjaci, vrsteauta)
 values
-(1, 'hibrid', 'serija1', null, null, 1, 1), (1, 'hibrid', 'serija2', null, null, 1, 1),
-(1, 'hibrid', 'serija3', null, null, 1, 1), (1, 'hibrid', 'serija4', null, null, 1, 1),
-(1, 'hibrid', 'serija5', null, null, 1, 1), (1, 'hibrid', 'serija6', null, null, 1, 1),
-(1, 'hibrid', 'serija7', null, null, 1, 1), (1, 'hibrid', 'serija8', null, null, 1, 1),
-(2, 'hibrid', 'Aklasa', null, null, 2, 2), (2, 'hibrid', 'Bklasa', null, null, 2, 2),
-(2, 'hibrid', 'Cklasa', null, null, 2, 2), (2, 'hibrid', 'Eklasa', null, null, 2, 2),
-(2, 'hibrid', 'Sklasa', null, null, 2, 2), (3, 'hibrid', 'F40', null, null, 3, 3),
-(3, 'hibrid', 'F50', null, null, 3, 3), (3, 'hibrid', 'Dino', null, null, 3, 3),
-(3, 'hibrid', 'Enzo', null, null, 3, 3), (4, 'hibrid', 'Giulia', null, null, 4, 4), 
-(4, 'hibrid', 'Giulietta', null, null, 4, 4), (4, 'hibrid', 'Spider', null, null, 4, 4),
-(4, 'hibrid', 'Stelvio', null, null, 4, 4), (4, 'hibrid', 'GTV', null, null, 4, 4),
-(5, 'hibrid', 'Alteca', null, null, 5, 5), (5, 'hibrid', 'Born', null, null, 5, 5),
-(5, 'hibrid', 'Formentor', null, null, 5, 5), (5, 'hibrid', 'Leon', null, null, 5, 5),
-(6, 'hibrid', 'Ibiza', null, null, 6, 6), (6, 'hibrid', 'Cordoba', null, null, 6, 6),
-(6, 'hibrid', 'Malaga', null, null, 6, 6), (6, 'hibrid', 'Toledo', null, null, 6, 6),
-(7, 'hibrid', 'Megan', null, null, 7, 7), (7, 'hibrid', 'Talisman', null, null, 7, 7),
-(7, 'hibrid', 'Capture', null, null, 7, 7), (7, 'hibrid', 'Fluence', null, null, 7, 7),
-(8, 'hibrid', '208', null, null, 8, 8), (8, 'hibrid', '308', null, null, 8, 8),
-(8, 'hibrid', '408', null, null, 8, 8), (8, 'hibrid', '508', null, null, 8, 8),
-(8, 'hibrid', '2008', null, null, 8, 8), (8, 'hibrid', '3008', null, null, 8, 8),
-(8, 'hibrid', '4008', null, null, 8, 8), (8, 'hibrid', '5008', null, null, 8, 8);
+('Bmw', 'hibrid', 'serija1', null, 1, 1), ('Bmw', 'hibrid', 'serija2', null, 1, 1),
+('Bmw', 'hibrid', 'serija3', null, 1, 1), ('Bmw', 'hibrid', 'serija4', null, 1, 1),
+('Bmw', 'hibrid', 'serija5', null, 1, 1), ('Bmw', 'hibrid', 'serija6', null, 1, 1),
+('Bmw', 'hibrid', 'serija7', null, 1, 1), ('Bmw', 'hibrid', 'serija8', null, 1, 1),
+('Mercedes', 'hibrid', 'Aklasa', null, 2, 2), ('Mercedes', 'hibrid', 'Bklasa', null, 2, 2),
+('Mercedes', 'hibrid', 'Cklasa', null, 2, 2), ('Mercedes', 'hibrid', 'Eklasa', null, 2, 2),
+('Mercedes', 'hibrid', 'Sklasa', null, 2, 2), ('Ferrari', 'hibrid', 'F40', null, 3, 3),
+('Ferrari', 'hibrid', 'F50', null, 3, 3), ('Ferrari', 'hibrid', 'Dino', null, 3, 3),
+('Ferrari', 'hibrid', 'Enzo', null, 3, 3), ('Alfa_romeo', 'hibrid', 'Giulia', null, 4, 4), 
+('Alfa_romeo', 'hibrid', 'Giulietta', null, 4, 4), ('Alfa_romeo', 'hibrid', 'Spider', null, 4, 4),
+('Alfa_romeo', 'hibrid', 'Stelvio', null, 4, 4), ('Alfa_romeo', 'hibrid', 'GTV', null, 4, 4),
+('Cupra', 'hibrid', 'Alteca', null, 5, 5), ('Cupra', 'hibrid', 'Born', null, 5, 5),
+('Cupra', 'hibrid', 'Formentor', null, 5, 5), ('Cupra', 'hibrid', 'Leon', null, 5, 5),
+('Seat', 'hibrid', 'Ibiza', null, 6, 6), ('Seat', 'hibrid', 'Cordoba', null, 6, 6),
+('Seat', 'hibrid', 'Malaga', null, 6, 6), ('Seat', 'hibrid', 'Toledo', null, 6, 6),
+('Renault', 'hibrid', 'Megan', null, 7, 7), ('Renault', 'hibrid', 'Talisman', null, 7, 7),
+('Renault', 'hibrid', 'Capture', null, 7, 7), ('Renault', 'hibrid', 'Fluence', null, 7, 7),
+('Peugeot', 'hibrid', '208', null, 8, 8), ('Peugeot', 'hibrid', '308', null, 8, 8),
+('Peugeot', 'hibrid', '408', null, 8, 8), ('Peugeot', 'hibrid', '508', null, 8, 8),
+('Peugeot', 'hibrid', '2008', null, 8, 8), ('Peugeot', 'hibrid', '3008', null, 8, 8),
+('Peugeot', 'hibrid', '4008', null, 8, 8), ('Peugeot', 'hibrid', '5008', null, 8, 8);
