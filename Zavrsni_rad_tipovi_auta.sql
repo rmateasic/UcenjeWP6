@@ -54,29 +54,61 @@ values
 
 insert into vrsteauta(naziv)
 values
-('limuzina'), ('karavan'), ('monovolumen'), ('coupe'), ('kabriolet'), ('suv');
+--1
+('limuzina'), 
+--2
+('karavan'), 
+--3
+('monovolumen'), 
+--4
+('coupe'), 
+--5
+('kabriolet'), 
+--6
+('suv');
 
 
 insert into automobili(nazivauta, gorivo, model, godiste, proizvodjaci, vrsteauta)
 values
-('Bmw', 'hibrid', 'serija1', '2015', 'Bmw', 'monovolumen'), ('Bmw', 'hibrid', 'serija2', '2015', 'Bmw', 'monovolumen'),
-('Bmw', 'hibrid', 'serija3', '2018', 'Bmw', 'karavan'), ('Bmw', 'hibrid', 'serija4', '2018', 'Bmw', 'limuzina'),
-('Bmw', 'hibrid', 'serija5', '2020', 'Bmw', 'karavan'), ('Bmw', 'hibrid', 'serija6', '2020', 'Bmw', 'coupe'),
-('Bmw', 'hibrid', 'serija7', '2022', 'Bmw', 'suv'), ('Bmw', 'hibrid', 'serija8', '2022', 'Bmw', 'kabriolet'),
-('Mercedes', 'hibrid', 'Aklasa', '2017', 'Mercedes', 'monovolumen'), ('Mercedes', 'hibrid', 'Bklasa', '2017', 'Mercedes', 'monovolumen'),
-('Mercedes', 'hibrid', 'Cklasa', '2019', 'Mercedes', 'limuzina'), ('Mercedes', 'hibrid', 'Eklasa', '2020', 'Mercedes', 'limuzina'),
-('Mercedes', 'hibrid', 'Sklasa', '2022', 'Mercedes', 'kabriolet'), ('Ferrari', 'hibrid', 'F40', '2015', 'Ferrari', 'coupe'),
-('Ferrari', 'hibrid', 'F50', '2017', 'Ferrari', 'kabriolet'), ('Ferrari', 'hibrid', 'Dino', '2018', 'Ferrari', 'coupe'),
-('Ferrari', 'hibrid', 'Enzo', '2020', 'Ferrari', 'suv'), ('Alfa_romeo', 'hibrid', 'Giulia', '2018', 'Alfa_romeo', 'kabriolet'), 
-('Alfa_romeo', 'hibrid', 'Giulietta', '2020', 'Alfa_romeo', 'monovolumen'), ('Alfa_romeo', 'hibrid', 'Spider', '2024', 'Alfa_romeo', 'suv'),
-('Alfa_romeo', 'hibrid', 'Stelvio', '2024', 'Alfa_romeo', 'suv'), ('Alfa_romeo', 'hibrid', 'GTV', '2023', 'Alfa_romeo', 'kabriolet'),
-('Cupra', 'hibrid', 'Alteca', '2020', 'Cupra', 'monovolumen'), ('Cupra', 'hibrid', 'Born', '2022', 'Cupra', 'coupe'),
-('Cupra', 'hibrid', 'Formentor', '2024', 'Cupra', 'monovolumen'), ('Cupra', 'hibrid', 'Leon', '2018', 'Cupra', 'monovolumen'),
-('Seat', 'hibrid', 'Ibiza', '2011', 'Seat', 'monovolumen'), ('Seat', 'hibrid', 'Cordoba', '2016', 'Seat', 'limuzina'),
-('Seat', 'hibrid', 'Malaga', '2014', 'Seat', 'monovolumen'), ('Seat', 'hibrid', 'Toledo', '2011', 'Seat', 'limuzina'),
-('Renault', 'hibrid', 'Megan', '2018', 'Renault', 'limuzina'), ('Renault', 'hibrid', 'Talisman', '2020', 'Renault', 'limuzina'),
-('Renault', 'hibrid', 'Capture', '2022', 'Renault', 'monovolumen'), ('Renault', 'hibrid', 'Fluence', '2022', 'Renault', 'monovolumen'),
-('Peugeot', 'hibrid', '208', '2021', 'Peugeot', 'kabriolet'), ('Peugeot', 'hibrid', '308', '2019', 'Peugeot', 'monovolumen'),
-('Peugeot', 'hibrid', '408', '2020', 'Peugeot', 'limuzina'), ('Peugeot', 'hibrid', '508', '2024', 'Peugeot', 'limuzina'),
-('Peugeot', 'hibrid', '2008', '2019', 'Peugeot', 'suv'), ('Peugeot', 'hibrid', '3008', '2018', 'Peugeot', 'suv'),
-('Peugeot', 'hibrid', '4008', '2019', 'Peugeot', 'suv'), ('Peugeot', 'hibrid', '5008', '2020', 'Peugeot', 'suv');
+('Bmw', 'hibrid', 'serija1', '2015', 1, 3), 
+('Bmw', 'hibrid', 'serija2', '2015', 1, 3),
+('Bmw', 'hibrid', 'serija3', '2018', 1, 2),
+('Bmw', 'hibrid', 'serija4', '2018', 1, 1),
+('Bmw', 'hibrid', 'serija5', '2020', 1, 2),
+('Bmw', 'hibrid', 'serija6', '2020', 1, 4),
+('Bmw', 'hibrid', 'serija7', '2022', 1, 6),
+('Bmw', 'hibrid', 'serija8', '2022', 1, 5),
+('Mercedes', 'hibrid', 'Aklasa', '2017', 2, 3), 
+('Mercedes', 'hibrid', 'Bklasa', '2017', 2, 3),
+('Mercedes', 'hibrid', 'Cklasa', '2019', 2, 1),
+('Mercedes', 'hibrid', 'Eklasa', '2020', 2, 1),
+('Mercedes', 'hibrid', 'Sklasa', '2022', 2, 5), 
+('Ferrari', 'hibrid', 'F40', '2015', 3, 4),
+('Ferrari', 'hibrid', 'F50', '2017', 3, 5), 
+('Ferrari', 'hibrid', 'Dino', '2018', 3, 4),
+('Ferrari', 'hibrid', 'Enzo', '2020', 3, 6),
+('Alfa_romeo', 'hibrid', 'Giulia', '2018', 4, 6), 
+('Alfa_romeo', 'hibrid', 'Giulietta', '2020', 4, 3), 
+('Alfa_romeo', 'hibrid', 'Spider', '2024', 4, 6),
+('Alfa_romeo', 'hibrid', 'Stelvio', '2024', 4, 6),
+('Alfa_romeo', 'hibrid', 'GTV', '2023', 4, 5),
+('Cupra', 'hibrid', 'Alteca', '2020', 5, 3), 
+('Cupra', 'hibrid', 'Born', '2022', 5, 4),
+('Cupra', 'hibrid', 'Formentor', '2024', 5, 3), 
+('Cupra', 'hibrid', 'Leon', '2018', 5, 3),
+('Seat', 'hibrid', 'Ibiza', '2011', 6, 3), 
+('Seat', 'hibrid', 'Cordoba', '2016', 6, 1),
+('Seat', 'hibrid', 'Malaga', '2014', 6, 3), 
+('Seat', 'hibrid', 'Toledo', '2011', 6, 1),
+('Renault', 'hibrid', 'Megan', '2018', 7, 1), 
+('Renault', 'hibrid', 'Talisman', '2020', 7, 1),
+('Renault', 'hibrid', 'Capture', '2022', 7, 3),
+('Renault', 'hibrid', 'Fluence', '2022', 7, 3),
+('Peugeot', 'hibrid', '208', '2021', 8, 5),
+('Peugeot', 'hibrid', '308', '2019', 8, 3),
+('Peugeot', 'hibrid', '408', '2020', 8, 1), 
+('Peugeot', 'hibrid', '508', '2024', 8, 1),
+('Peugeot', 'hibrid', '2008', '2019', 8, 6), 
+('Peugeot', 'hibrid', '3008', '2018', 8, 6),
+('Peugeot', 'hibrid', '4008', '2019', 8, 6), 
+('Peugeot', 'hibrid', '5008', '2020', 8, 6);
