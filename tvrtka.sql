@@ -20,3 +20,10 @@ datum_rodenja datetime,
 placa decimal (10,2),
 invalid bit
 );
+
+create table slike(
+sifra int not null primary key identity(1,1),
+zaposlenik int not null references zaposlenici(sifra),
+redni_broj int not null,
+putanja varchar(100),
+);
