@@ -49,3 +49,14 @@ bojaociju varchar(39),
 haljina varchar(44) not null,
 sestra int
 );
+
+create table cura(
+sifra int not null primary key identity(1,1),
+novcica decimal(16,5),
+gustoca decimal(18,6),
+lipa decimal(13,10) not null,
+ogrlica int,
+bojakose varchar(38) not null,
+suknja varchar(36) not null,
+punac int not null
+);
