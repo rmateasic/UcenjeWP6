@@ -25,7 +25,7 @@ create table slike(
 sifra int not null primary key identity(1,1),
 zaposlenik int not null references zaposlenici(sifra),
 redni_broj int not null,
-putanja varchar(100),
+putanja varchar(100) not null
 );
 
 insert into zaposlenici(ime, prezime, datum_rodenja, placa, invalid)
