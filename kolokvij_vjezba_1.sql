@@ -28,3 +28,13 @@ ogrlica int not null,
 gustoca decimal(14,9) not null,
 hlace varchar(41) 
 );
+
+create table svekar(
+sifra int not null primary key identity(1,1),
+bojaociju varchar(40),
+prstena int not null,
+dukserica varchar(41) not null,
+lipa decimal(13,8) not null,
+eura decimal(12,7) not null,
+majica varchar(35) not null
+);
