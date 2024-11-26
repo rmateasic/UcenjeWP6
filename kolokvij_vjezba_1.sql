@@ -38,3 +38,14 @@ lipa decimal(13,8) not null,
 eura decimal(12,7) not null,
 majica varchar(35) not null
 );
+
+create table zena(
+sifra int not null primary key identity(1,1),
+treciputa datetime not null,
+hlace varchar(46) not null,
+kratkamajica varchar(31),
+jmbag char(11),
+bojaociju varchar(39),
+haljina varchar(44) not null,
+sestra int
+);
