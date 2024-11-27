@@ -23,7 +23,7 @@ aktivan bit
 create table racuni(
 sifra int not null primary key identity(1,1),
 datum datetime,
-kupac varchar(100) not null,
+kupac int not null references kupci(sifra),
 status bit
 );
 
