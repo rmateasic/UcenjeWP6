@@ -45,3 +45,12 @@ introvertno bit not null,
 majica varchar(40),
 decko int not null references decko(sifra)
 );
+
+create table zarucnica(
+sifra int primary key identity(1,1),
+narukvica int not null,
+bojakose varchar(37),
+novcica decimal(15,9) not null,
+lipa decimal (15,8),
+indifertentno bit
+);
