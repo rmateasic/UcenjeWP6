@@ -13,3 +13,9 @@ go
 use kolokvij_vjezba_2;
 go
 
+create table svekar(
+sifra int primary key identity(1,1),
+stilfrizura varchar(48) not null,
+ogrlica int,
+asocijalno bit
+);
