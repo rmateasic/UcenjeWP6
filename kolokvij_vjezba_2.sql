@@ -19,3 +19,12 @@ stilfrizura varchar(48) not null,
 ogrlica int,
 asocijalno bit
 );
+
+create table prijatelj(
+sifra int primary key identity(1,1),
+modelnaocala varchar(37) not null,
+treciputa datetime,
+ekstrovertno bit,
+prviputa datetime not null,
+svekar int
+);
