@@ -61,3 +61,23 @@ sifra int primary key identity(1,1),
 decko int references decko(sifra),
 zarucnica int references zarucnica(sifra)
 );
+
+create table neprijatelj(
+sifra int primary key identity(1,1),
+majica varchar(32) not null,
+haljina varchar(43),
+lipa decimal(16,8) not null,
+modelnaocala varchar(49),
+kuna decimal(12,6),
+jmbag char(11) not null,
+cura int not null references cura(sifra)
+);
+
+create table brat(
+sifra int primary key identity(1,1),
+suknja varchar(40) not null,
+ogrlica int,
+asocijalno bit,
+neprijatelj int references neprijatelj(sifra)
+);
+
