@@ -47,7 +47,7 @@ kratkamajica varchar(31),
 jmbag char(11),
 bojaociju varchar(39),
 haljina varchar(44) not null,
-sestra int
+sestra int references sestra(sifra)
 );
 
 create table cura(
@@ -58,13 +58,13 @@ lipa decimal(13,10) not null,
 ogrlica int,
 bojakose varchar(38) not null,
 suknja varchar(36) not null,
-punac int not null
+punac int not null references punac(sifra)
 );
 
 create table sestra_svekar(
 sifra int not null primary key identity(1,1),
-sestra int,
-svekar int
+sestra int references sestra(sifra),
+svekar int references svekar(sifra)
 );
 
 create table muskarac(
@@ -73,7 +73,7 @@ bojaociju varchar(50),
 hlace varchar(30) not null,
 modelnaocala varchar(43) not null,
 maraka decimal(14,5),
-zena int
+zena int references zena(sifra)
 );
 
 create table mladic(
@@ -84,5 +84,5 @@ drugiputa datetime not null,
 asocijalno bit not null,
 ekstrovertno bit,
 dukserica varchar(48),
-muskarac int not null
+muskarac int not null references muskarac(sifra)
 );
