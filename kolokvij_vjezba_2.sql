@@ -35,6 +35,7 @@ indiferentno bit not null,
 vesta varchar(34) not null,
 asocijalno bit
 );
+
 create table cura(
 sifra int primary key identity(1,1),
 haljina varchar(30),
@@ -53,4 +54,10 @@ bojakose varchar(37),
 novcica decimal(15,9) not null,
 lipa decimal (15,8),
 indifertentno bit
+);
+
+create table decko_zarucnica(
+sifra int primary key identity(1,1),
+decko int references decko(sifra),
+zarucnica int references zarucnica(sifra)
 );
