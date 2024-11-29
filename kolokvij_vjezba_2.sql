@@ -26,5 +26,12 @@ modelnaocala varchar(37) not null,
 treciputa datetime,
 ekstrovertno bit,
 prviputa datetime not null,
-svekar int
+svekar int references svekar(sifra)
+);
+
+create table decko(
+sifra int primary key identity(1,1),
+indiferentno bit not null,
+vesta varchar(34) not null,
+asocijalno bit
 );
