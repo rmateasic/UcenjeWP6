@@ -75,3 +75,14 @@ modelnaocala varchar(43) not null,
 maraka decimal(14,5),
 zena int
 );
+
+create table mladic(
+sifra int not null primary key identity(1,1),
+suknja varchar(50),
+kuna decimal(16,8),
+drugiputa datetime not null,
+asocijalno bit not null,
+ekstrovertno bit,
+dukserica varchar(48),
+muskarac int not null
+);
