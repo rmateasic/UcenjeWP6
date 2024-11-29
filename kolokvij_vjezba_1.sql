@@ -17,7 +17,7 @@ create table sestra(
 sifra int not null primary key identity(1,1),
 introvertno bit not null,
 haljina varchar(31),
-marama decimal(16,6) not null,
+maraka decimal(16,6) not null,
 hlace varchar(46),
 narukvica int 
 );
@@ -59,4 +59,19 @@ ogrlica int,
 bojakose varchar(38) not null,
 suknja varchar(36) not null,
 punac int not null
+);
+
+create table sestra_svekar(
+sifra int not null primary key identity(1,1),
+sestra int,
+svekar int
+);
+
+create table muskarac(
+sifra int not null primary key identity(1,1),
+bojaociju varchar(50),
+hlace varchar(30) not null,
+modelnaocala varchar(43) not null,
+maraka decimal(14,5),
+zena int
 );
