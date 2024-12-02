@@ -22,3 +22,13 @@ majica varchar(49) not null,
 novcica decimal(15,8) not null,
 ogrlica int
 );
+
+create table svekar(
+sifra int primary key identity(1,1),
+novcica decimal(16,8),
+suknja varchar(44),
+bojakose varchar(36) not null,
+prsten int not null,
+narukvica int,
+cura int references cura(sifra)
+);
