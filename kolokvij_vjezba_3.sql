@@ -68,3 +68,9 @@ kuna decimal(13,8),
 vesta varchar(32),
 snasa int references snasa(sifra)
 );
+
+create table prijatelj_brat(
+sifra int primary key identity(1,1),
+prijatelj int references prijatelj(sifra),
+brat int
+);
