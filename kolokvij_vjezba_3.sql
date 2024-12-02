@@ -69,8 +69,15 @@ vesta varchar(32),
 snasa int references snasa(sifra)
 );
 
+create table brat(
+sifra int primary key identity(1,1),
+jmbg char(11) not null,
+ogrlica int,
+ekstrovertno int
+);
+
 create table prijatelj_brat(
 sifra int primary key identity(1,1),
 prijatelj int references prijatelj(sifra),
-brat int
+brat int references brat(sifra)
 );
