@@ -50,3 +50,12 @@ majica varchar(36) not null,
 modelnaocala varchar(31),
 prijatelj int references prijatelj(sifra) not null
 );
+
+create table snasa(
+sifra int primary key identity(1,1),
+introvertno bit not null,
+kuna decimal(15,6),
+eura decimal(12,9),
+trecipura datetime not null,
+ostavljena int references ostavljena(sifra)
+);
