@@ -41,3 +41,12 @@ lipa decimal(13,10) not null,
 dukserica varchar(31) not null,
 indiferentno bit
 );
+
+create table ostavljena(
+sifra int primary key identity(1,1),
+kuna decimal(17,5) not null,
+lipa decimal(15,6) not null,
+majica varchar(36) not null,
+modelnaocala varchar(31),
+prijatelj int references prijatelj(sifra) not null
+);
