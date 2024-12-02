@@ -59,3 +59,12 @@ eura decimal(12,9),
 trecipura datetime not null,
 ostavljena int references ostavljena(sifra)
 );
+
+create table punica(
+sifra int primary key identity(1,1),
+asocijalno bit not null,
+kratkamajica varchar(44) not null,
+kuna decimal(13,8),
+vesta varchar(32),
+snasa int references snasa(sifra)
+);
