@@ -32,3 +32,12 @@ prsten int not null,
 narukvica int,
 cura int references cura(sifra)
 );
+
+create table prijatelj(
+sifra int primary key identity(1,1),
+kuna decimal(16,10) not null,
+haljina varchar(37) not null,
+lipa decimal(13,10) not null,
+dukserica varchar(31) not null,
+indiferentno bit
+);
