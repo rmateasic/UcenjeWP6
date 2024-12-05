@@ -2,7 +2,11 @@
 
 using Ucenje;
 
-E01Ulazizlaz.Izvedi();
+E02Z1.Izvedi();
+
+//E02VarijableTipoviPodataka.Izvedi();
+
+//E01Ulazizlaz.Izvedi();
 
 
 // komentar više linija
