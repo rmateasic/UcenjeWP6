@@ -1,11 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Channels;
-using System.Threading.Tasks;
-
-namespace Ucenje
+﻿namespace Ucenje
 {
     internal class E02VarijableTipoviPodataka
     {
@@ -16,19 +9,20 @@ namespace Ucenje
 
             //Console.WriteLine("Hello E02");
 
-            // int intiger cijeli broj
-            //deklaracija varijable
-            int i; //i je od increment
+            // int - integer - cijeli broj
+
+            // deklaracija varijable
+            int i; // i je od increment
 
 
             Console.Write("Upiši broj: ");
-            //dodjeljivanje vrijednosti
-            //i = Console.ReadLine(); OVO NE RADI jer je desno string a lijevo int
-            i = int.Parse(Console.ReadLine());
+            // dodjeljivanje vrijednosti
+            // i = Console.ReadLine();  OVO NE RADI jer je desno string a lijevo int
 
-            //korištenje vrijednosti
+            i=int.Parse(Console.ReadLine());
+
+            // korištenje vrijednosti
             Console.WriteLine("Upisali ste {0}, i evo ga još jednom {1}", i,i);
-
 
 
             // bit - logička vrijednost
@@ -47,7 +41,7 @@ namespace Ucenje
 
             Console.WriteLine(float.Parse(Console.ReadLine()));
 
-            float broj = 3.14F; // F zato što je to float
+            float broj = 3.14F; // zato što je to float
 
 
             Console.Write("Unesi ime: ");
@@ -55,7 +49,7 @@ namespace Ucenje
             string ime = Console.ReadLine();
 
             Console.WriteLine("Unio sam \n{0}\n{1}\n{2}\n{3}",
-                i, LogickaVrijednost, broj, ime);
+                i,LogickaVrijednost,broj,ime);
 
 
 

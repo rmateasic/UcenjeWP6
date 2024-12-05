@@ -1,33 +1,20 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Ucenje
+﻿namespace Ucenje
 {
 
-    // Napišite program koji unosi ime i broj godina
+    // Napišite program koji unosi ime i broj godina osobe
 
-    // Program ispisuje: Osoba XXXXX ima yy godina
+    // Program ispisuje: Osoba XXXXXX ima YY godina.
 
     internal class E02Z1
     {
-        // Ova metoda je uvije potrebna (za sad ju "kucamo" ručno)
+        // Ova metoda je uvijek potrebna (za sada ju "kucamo" ručno)
         public static void Izvedi()
         {
 
-            // ovdje se piše riješenje zadatka
-            
+            //ovdje se piše rješenje tadatka
+           
 
         }
-
-      
-
-
-
-
-
 
 
     }
