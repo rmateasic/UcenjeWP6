@@ -3,7 +3,9 @@
 using Ucenje;
 
 
-E03Operatori.Izvedi();
+E04UvjetnoGrananjeIf.Izvedi();
+
+//E03Operatori.Izvedi();
 
 //E02Z1.Izvedi();
 
