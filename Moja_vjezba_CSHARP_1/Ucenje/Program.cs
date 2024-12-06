@@ -2,7 +2,9 @@
 
 using Ucenje;
 
-E02Z1.Izvedi();
+E03Operatori.Izvedi();
+
+//E02Z1.Izvedi();
 
 //E02VarijableTipoviPodataka.Izvedi();
 
