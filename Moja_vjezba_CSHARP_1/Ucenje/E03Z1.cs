@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading.Channels;
 using System.Threading.Tasks;
 
 namespace Ucenje
@@ -16,5 +17,19 @@ namespace Ucenje
     // 5. kvocijent prvog i drugog broja
     internal class E03Z1
     {
+
+        public static void Izvedi()
+        {
+            Console.WriteLine("E03Z1");
+
+
+        }
+
+            
+
+       
+
+
+
     }
 }
