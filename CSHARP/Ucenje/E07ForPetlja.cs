@@ -128,6 +128,7 @@ namespace Ucenje
 
 
 
+            }
                 // kako postići beskonačnu petlju
 
 
@@ -140,12 +141,12 @@ namespace Ucenje
 
              for(; ;)
                 {
-                    Console.WriteLine(new Random().NextInt64() +"" + new Random().NextInt64() + Thread.Sleep(300));
+                    Console.WriteLine(new Random().NextInt64() +"" + new Random().NextInt64() );
+                Thread.Sleep(300);
                     break;
                 }
 
 
-            }
         }
     }
 
