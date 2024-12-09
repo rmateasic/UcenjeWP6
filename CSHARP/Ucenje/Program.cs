@@ -1,8 +1,6 @@
 ﻿
 
 using Ucenje;
-
-
 E04Z2.Izvedi();
 
 //E06Nizovi.Izvedi();
