@@ -1,12 +1,12 @@
 ﻿namespace Ucenje
 {
-    internal class E01Ulazizlaz
+    internal class E01UlazIzlaz
     {
 
         public static void Izvedi()
         {
-            // Ovo je zlaz
-            Console.Write("Unesi svoje ime: "); 
+            // Ovo je izlaz
+            Console.Write("Unesi svoje ime: ");
 
 
             // Ulaz podataka u program
@@ -15,11 +15,9 @@
             Console.WriteLine("Unijeli ste " + Ime);
 
             // formatirani način ispisa
-            Console.WriteLine("Unijeli ste {0}. Bravo", Ime);
-
+            Console.WriteLine("Unijeli ste {0}. Bravo!", Ime);
 
         }
-
 
 
     }

@@ -6,23 +6,13 @@ using System.Threading.Tasks;
 
 namespace Ucenje
 {
+
+    // Program od korisnika traži unos dva cijela broja
+    // Program ispisuje manji
+
+    // isti zadatak ali za tri unesena broja ispisati najmanji
+
     internal class E04Z3
     {
-
-        public static void Izvedi()
-        {
-            //Console.WriteLine("E04Z3");
-
-            Console.WriteLine("Unesi dva cijela broja");
-            int broj = int.Parse(Console.ReadLine());
-            if(broj % 3 == 0)
-            {
-
-            }
-
-
-        }
-
-
     }
 }

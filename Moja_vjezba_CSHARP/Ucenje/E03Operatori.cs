@@ -7,8 +7,8 @@
         {
 
             //Console.WriteLine("E03");
-            // operatori za rad sa varijablama
-            // = je dodjeljivanje vrijednosti
+            // operatori za rad s varijablama
+            // = je dodjeljivanje vrijednost
             // == provjera jednakosti -> bool
 
             int i = 7; // sada zamislimo da je korisnik unio 7
@@ -19,7 +19,7 @@
 
             int k = 2, l = 1;
 
-            Console.WriteLine(l / k); //djeljenje dva int daje int
+            Console.WriteLine(l / k); // djeljenje dva int daje int
 
             // mehanizam cast -> interpretacija broja u drugom tipu podatka
             Console.WriteLine(l / (float)k);
@@ -36,7 +36,7 @@
 
             // AUTOMATSKO FORMATIRANJE CTRL + K + D
 
-            //uvećavanje za 1
+            // uvećavanje za 1
 
             int b = 0;
 
@@ -46,10 +46,10 @@
             // kraće
             b += 1; //2
 
-            // najkraće
+            //najkraće
             b++; //3
 
-            // gornja tri primjera vrijede i za -, dok prva dva gornja vrijede i za * i /
+            // gornja tri primjera vrijede i za -, prva dva gornja vrijede i za * i /
 
             Console.WriteLine(b);
 
@@ -67,8 +67,15 @@
 
             int t = 0, c = 1;
             t = c++ + t; // t = 1, c = 2
-            c += ++t; // c = 4, t = 2
-            Console.WriteLine(c+t); // 6
+            c += --t; // c = 2, t = 0
+            Console.WriteLine(c+t); // 2
+
+
+
+
+
+
+
 
 
 
@@ -77,5 +84,7 @@
 
 
         }
+
+
     }
 }

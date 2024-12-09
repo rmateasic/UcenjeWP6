@@ -17,7 +17,7 @@
 
             Console.Write("Upiši broj: ");
             // dodjeljivanje vrijednosti
-            // i = Console.ReadLine(); OVO NE RADI jer je desno string a lijevo int
+            // i = Console.ReadLine();  OVO NE RADI jer je desno string a lijevo int
 
             i=int.Parse(Console.ReadLine());
 
@@ -41,19 +41,15 @@
 
             Console.WriteLine(float.Parse(Console.ReadLine()));
 
-            float broj = 3.14F;  // zato što je to float
+            float broj = 3.14F; // zato što je to float
 
 
-            Console.WriteLine("Unesi ime: ");
-            
+            Console.Write("Unesi ime: ");
+
             string ime = Console.ReadLine();
 
             Console.WriteLine("Unio sam \n{0}\n{1}\n{2}\n{3}",
-                i, LogickaVrijednost, broj, ime);
-
-
-
-
+                i,LogickaVrijednost,broj,ime);
 
 
 
