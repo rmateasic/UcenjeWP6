@@ -109,8 +109,43 @@ namespace Ucenje
                 Console.WriteLine();
             }
 
+            // petlju se može preskočiti i nasilno prekinuti
+            for(int i = 0; i < 10; i++)
+            {
+                if(i == 3)
+                {
+                    continue;
+                }
+
+                if(i == 7)
+                {
+                    break;
+                }
+
+                Console.WriteLine(i);
 
 
+
+
+
+                // kako postići beskonačnu petlju
+
+
+
+             for(int i = 0; i >= 0; i++)
+                {
+                    Console.WriteLine(i);
+                    break;
+                }
+
+             for(; ;)
+                {
+                    Console.WriteLine(new Random().NextInt64() +"" + new Random().NextInt64() + Thread.Sleep(300));
+                    break;
+                }
+
+
+            }
         }
     }
 
