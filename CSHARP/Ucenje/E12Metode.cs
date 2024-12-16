@@ -30,6 +30,9 @@ namespace Ucenje
             int[] niz = { 2, 5, 2, 1, 4, 2, 1, 2 };
             Console.WriteLine(Tip4(niz));
 
+            // Metoda
+            Tip4(niz);// ona će se izvesti ali njezin rezultat nema efekta
+
         }
 
 
@@ -81,6 +84,32 @@ namespace Ucenje
                 suma += i;
             }
             return suma;
+        }
+
+
+
+
+
+        // NAMA BITNE METODE
+        // Write once, use everywhere
+
+        public static int UcitajCijeliBroj(string poruka)
+        {
+
+            while (true)
+            {
+                Console.WriteLine(poruka);
+                try
+                {
+                    return int.Parse(Console.ReadLine());
+                }
+                catch
+                {
+                    Console.WriteLine("Problem kod učitanja broja!");
+                }
+            }
+
+            //return 0; // kasnije obrisati
         }
 
 
