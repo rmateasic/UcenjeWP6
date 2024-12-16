@@ -7,34 +7,15 @@ using System.Threading.Tasks;
 
 namespace Ucenje
 {
+
+    // Program unosi brojeve sve dok se ne unese broj -1
+    // Program ispisuje zbroj svih unesenih brijeva
+
     internal class E09Z2
     {
-
         public static void Izvedi()
         {
-            //Console.WriteLine("Z2");
-
-
-
-            int sum = 0, broj;
-            while (true)
-            {
-
-                Console.Write("Unesi broj: ");
-                broj = int.Parse(Console.ReadLine());
-                if (broj == -1)
-                {
-                    break;
-                }
-                sum += broj;
-
-
-
-            }
-            Console.WriteLine(sum);
-
+            
         }
-
-
     }
 }

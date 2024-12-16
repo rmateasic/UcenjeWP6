@@ -1,13 +1,7 @@
 ﻿
 
 using Ucenje;
-
-
-
-E10Z2.Izvedi();
-
-//E10Z1.Izvedi();
-
+E10Z1.Izvedi();
 //E10ForeachPetlja.Izvedi();
 
 //E09Z2.Izvedi();
