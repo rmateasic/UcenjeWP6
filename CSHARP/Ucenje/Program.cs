@@ -5,9 +5,9 @@ using Ucenje;
 
 
 
+E13Z1.Izvedi();
 
-
-E13Rekurzija.Izvedi();
+//E13Rekurzija.Izvedi();
 
 //E12Z1.Izvedi();
 
