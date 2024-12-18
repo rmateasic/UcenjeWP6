@@ -2,17 +2,17 @@
 
 using Ucenje;
 
-
 E12Z1.Izvedi();
 
+
 //E12Metode.Izvedi();
+
 
 //E11Z1LOSE.Izvedi();
 
 //E11TryCatch.Izvedi();
 
 //E10Z1.Izvedi();
-
 //E10ForeachPetlja.Izvedi();
 
 //E09Z2.Izvedi();

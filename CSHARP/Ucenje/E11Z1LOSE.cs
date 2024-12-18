@@ -8,6 +8,8 @@ namespace Ucenje
 {
     internal class E11Z1LOSE
     {
+        // Program unosi dva cijela broja i ispisuje njihov zbroj
+        // Program mora biti "neprobojan"
 
         public static void Izvedi()
         {
@@ -21,13 +23,13 @@ namespace Ucenje
                     broj1 = int.Parse(Console.ReadLine());
                     break;
                 }
-                catch
+                catch 
                 {
-                    Console.WriteLine("Nisi unio broj: ");
-
+                    Console.WriteLine("Nisi unio broj");
                 }
-
             }
+
+
             while (true)
             {
                 Console.Write("Unesi drugi broj: ");
@@ -38,12 +40,13 @@ namespace Ucenje
                 }
                 catch
                 {
-                    Console.WriteLine("Nisi unio broj: ");
-
+                    Console.WriteLine("Nisi unio broj");
                 }
             }
 
-            Console.WriteLine("{0} + {1} = {2}", broj1, broj2, broj1+broj2);
+            Console.WriteLine("{0} + {1} = {2}", broj1,broj2, broj1+broj2);
+
+
         }
 
     }
