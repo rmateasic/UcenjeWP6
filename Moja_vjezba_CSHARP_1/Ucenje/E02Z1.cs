@@ -12,7 +12,7 @@
         {
 
             // ovdje se piše rješenje zadatka
-            Console.Write("Unesi ime; ");
+            Console.Write("Unesi ime: ");
             string ime = Console.ReadLine();
             Console.Write("Unesi broj godina (cijeli broj): ");
             int godine = int.Parse(Console.ReadLine());

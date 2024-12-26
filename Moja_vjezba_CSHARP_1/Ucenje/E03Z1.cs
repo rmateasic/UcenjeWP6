@@ -13,7 +13,17 @@
 
         public static void Izvedi()
         {
-            Console.WriteLine("E03Z1");
+            //Console.WriteLine("E03Z1");
+            int i = 0, j = 0;
+
+            Console.WriteLine("Unesi 1. cijeli broj: ");
+            i = int.Parse(Console.ReadLine());
+
+            Console.WriteLine("Unesi 2. cijeli brij: ");
+            j = int.Parse(Console.ReadLine());
+
+            Console.WriteLine("Zbroj {0}: ", i + j);
+
 
 
         }

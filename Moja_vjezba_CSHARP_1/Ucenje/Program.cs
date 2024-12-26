@@ -2,7 +2,7 @@
 
 using Ucenje;
 
-E03Z1.Izvedi();
+//E03Z1.Izvedi();
 
 //E03Operatori.Izvedi();
 
@@ -10,7 +10,7 @@ E03Z1.Izvedi();
 
 //E02VarijableTipoviPodataka.Izvedi();
 
-// E01UlazIzlaz.Izvedi();
+//E01UlazIzlaz.Izvedi();
 
 // komentrar jedna linija
 
