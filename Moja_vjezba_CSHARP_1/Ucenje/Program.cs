@@ -2,6 +2,11 @@
 
 using Ucenje;
 
+
+
+
+//E08WhilePetlja.Izvedi();
+
 //E07Z2.Izvedi();
 
 //E07Z1.Izvedi();
