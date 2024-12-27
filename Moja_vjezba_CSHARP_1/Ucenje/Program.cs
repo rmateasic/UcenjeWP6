@@ -4,7 +4,7 @@ using Ucenje;
 
 
 
-
+//E09Z2.Izvedi();
 
 //E09Z1.Izvedi();
 
