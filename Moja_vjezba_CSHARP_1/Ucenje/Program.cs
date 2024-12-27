@@ -4,6 +4,9 @@ using Ucenje;
 
 
 
+
+//E04Z3.Izvedi();
+
 //E04Z2.Izvedi();
 
 //E04Z1.Izvedi();
