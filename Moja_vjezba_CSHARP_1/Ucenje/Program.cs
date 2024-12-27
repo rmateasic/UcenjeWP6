@@ -4,6 +4,8 @@ using Ucenje;
 
 
 
+//E07Z1.Izvedi();
+
 //E07ForPetlja.Izvedi();
 
 //E06Nizovi.Izvedi();
