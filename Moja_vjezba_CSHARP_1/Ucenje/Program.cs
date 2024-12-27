@@ -5,6 +5,11 @@ using Ucenje;
 
 
 
+
+
+
+//E09DoWhilePetlja.Izvedi();
+
 //E08WhilePetlja.Izvedi();
 
 //E07Z2.Izvedi();
