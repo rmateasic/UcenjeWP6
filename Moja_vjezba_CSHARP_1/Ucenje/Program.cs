@@ -5,6 +5,8 @@ using Ucenje;
 
 
 
+//E05UvjetnoGrananjeSwitch.Izvedi();
+
 //E04Z3.Izvedi();
 
 //E04Z2.Izvedi();
