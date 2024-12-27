@@ -4,6 +4,8 @@ using Ucenje;
 
 
 
+//E04Z1.Izvedi();
+
 //E04UvjetnoGrananje.Izvedi();
 
 //E03Z1.Izvedi();
