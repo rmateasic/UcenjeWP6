@@ -6,7 +6,7 @@ using Ucenje;
 
 
 
-
+//E09Z1.Izvedi();
 
 //E09DoWhilePetlja.Izvedi();
 
