@@ -4,7 +4,7 @@ using Ucenje;
 
 
 
-
+//E10Z1.Izvedi();
 
 //E10ForeachPetlja.Izvedi();
 
