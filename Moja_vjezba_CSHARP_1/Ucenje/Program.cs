@@ -4,7 +4,7 @@ using Ucenje;
 
 
 
-
+E11Z1LOSE.Izvedi();
 
 //E11TryCatch.Izvedi();
 
