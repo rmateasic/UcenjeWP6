@@ -4,6 +4,10 @@ using Ucenje;
 
 
 
+
+
+//E10ForeachPetlja.Izvedi();
+
 //E09Z2.Izvedi();
 
 //E09Z1.Izvedi();
