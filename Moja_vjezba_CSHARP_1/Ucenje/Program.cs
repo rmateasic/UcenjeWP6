@@ -3,7 +3,7 @@
 using Ucenje;
 
 
-
+//E13Rekurzija.Izvedi();
 
 //E12Z1.Izvedi();
 
