@@ -5,7 +5,7 @@ using Ucenje;
 
 
 
-
+//E12Z1.Izvedi();
 
 //E12Metode.Izvedi();
 
