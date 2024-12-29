@@ -3,9 +3,12 @@
 using Ucenje;
 
 
-//E15Subota.Izvedi();
 
 E14Vjezbanje.Izvedi();
+
+//E15Subota.Izvedi();
+
+//E14Vjezbanje.Izvedi();
 
 //E13Z2.Izvedi();
 
@@ -24,8 +27,7 @@ E14Vjezbanje.Izvedi();
 
 //E11TryCatch.Izvedi();
 
-E10Z1.Izvedi();
-
+//E10Z1.Izvedi();
 //E10ForeachPetlja.Izvedi();
 
 //E09Z2.Izvedi();

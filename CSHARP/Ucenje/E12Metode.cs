@@ -150,9 +150,9 @@ namespace Ucenje
                 try
                 {
                     i = int.Parse(Console.ReadLine());
-                    if (i < min || i > max)
+                    if(i<min || i > max)
                     {
-                        Console.WriteLine("Broj nije u danom rasponu {0} - {1}", min, max);
+                        Console.WriteLine("Broj nije u danom rasponu {0} - {1}",min,max);
                         continue;
                     }
                     return i;
@@ -166,6 +166,9 @@ namespace Ucenje
 
             // return 0; // kasnije obrisati
         }
+
+
+
 
 
 
@@ -186,6 +189,8 @@ namespace Ucenje
 
            // return "";
         }
+
+
 
         public static bool UcitajBool(string poruka, string uvjetZaTrue)
         {
