@@ -6,105 +6,66 @@ namespace Ucenje
 
         public static void Izvedi()
         {
+
             Console.WriteLine("Upiši broj redova: ");
             int redovi = int.Parse(Console.ReadLine());
+
             Console.WriteLine("Upiši broj stupaca: ");
             int stupci = int.Parse(Console.ReadLine());
 
-            //int redovi = 5;
-            //int stupci = 5;
+            int unesenaVrijednost = 0;
 
             int[,] tablica = new int[redovi, stupci];
-            int stup = stupci - 1;
-            int red = redovi - 1;
+
             int vrijednost = 1;
             int max_vrijednost = redovi * stupci;
 
-            Console.WriteLine();
+            int desnaGranica = stupci - 1;
+            int donjaGranica = redovi - 1;
+            int gornjaGranica = 0;
+            int lijevaGranica = 0;
 
-            while (vrijednost < max_vrijednost)
+
+            while (vrijednost <= max_vrijednost)
             {
-
-                // dolje desno prema lijevo
-
-                for (stup = stupci - 1; stup >= 0; stup--)
+                //1.dolje desno prema lijevo
+                for (int stup = desnaGranica; stup >= lijevaGranica && vrijednost <= max_vrijednost; stup--)
                 {
-                    tablica[red, stup] = vrijednost++;
+                    tablica[donjaGranica, stup] = vrijednost++;
                 }
-
-                // dolje lijevo prema gore
-
-                for (red = redovi - 2; red >= 0; red--)
+                donjaGranica--;
+                //2.dolje lijevo prema gore
+                for (int redak = donjaGranica; redak >= gornjaGranica && vrijednost <= max_vrijednost; redak--)
                 {
-                    tablica[red, 0] = vrijednost++;
+                    tablica[redak, lijevaGranica] = vrijednost++;
                 }
-
-                // gore lijevo prema desno
-
-                for (stup = 1; stup < stupci; stup++)
+                lijevaGranica++;
+                //3.gore lijevo prema desno
+                for (int stup = lijevaGranica; stup <= desnaGranica && vrijednost <= max_vrijednost; stup++)
                 {
-                    tablica[0, stup] = vrijednost++;
+                    tablica[gornjaGranica, stup] = vrijednost++;
                 }
-
-                // gore desno prema dolje
-
-                for (red = 1; red < redovi - 1; red++)
+                gornjaGranica++;
+                //4.gore desno prema dolje
+                for (int redak = gornjaGranica; redak <= donjaGranica && vrijednost <= max_vrijednost; redak++)
                 {
-                    tablica[red, stupci - 1] = vrijednost++;
+                    tablica[redak, desnaGranica] = vrijednost++;
                 }
-
-                // dolje desno -1 prema lijevo 
-
-                for (stup = stupci - 2; stup >= 1; stup--)
-                {
-                    tablica[red - 1, stup] = vrijednost++;
-                }
-
-                // dolje lijevo -1 prema gore
-
-                for (red = redovi - 3; red >= 1; red--)
-                {
-                    tablica[red, stup + 1] = vrijednost++;
-                }
-
-                // gore lijevo prema desno -2
-
-                for (stup = 1; stup < stupci - 2; stup++)
-                {
-                    tablica[red + 1, stup + 1] = vrijednost++;
-                }
-
-                // gore desno prema dolje
-
-                for (red = redovi - 3; red <= 2; red++)
-                {
-                    tablica[redovi / 2, stup] = vrijednost++;
-                }
-
-                // dolje desno prema lijevo
-
-                for (stup = stupci / 2 + 1; stup <= stupci / 2 + 1; stup++)
-                {
-                    tablica[redovi / 2, stupci / 2] = vrijednost++;
-                }
+                desnaGranica--;
             }
-
-
-
-
-
-            for (int i = 0; i < tablica.GetLength(0); i++)
+            // ispis tablice
+            for (int redak = 0; redak < redovi; redak++)
             {
-                for (int j = 0; j < tablica.GetLength(1); j++)
+                for (int stup = 0; stup < stupci; stup++)
                 {
-                    Console.Write(tablica[i, j] + "\t");
+                    Console.Write(string.Format("{0,4}", tablica[redak, stup]) + "\t");
                 }
                 Console.WriteLine();
+
+
             }
         }
     }
 
-        
-
-    
 }
+  
