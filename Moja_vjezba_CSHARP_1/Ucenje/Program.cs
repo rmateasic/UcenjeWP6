@@ -2,7 +2,15 @@
 
 using Ucenje;
 
-CiklicnaTablica.Izvedi();
+
+
+
+
+
+
+//IzracunPovrsinePravokutnika.Izvedi();
+
+//CiklicnaTablica.Izvedi();
 
 //E15Subota.Izvedi();
 
