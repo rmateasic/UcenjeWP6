@@ -6,7 +6,7 @@ using Ucenje;
 
 
 
-
+//ProvjeraBroja.Izvedi();
 
 //IzracunPovrsinePravokutnika.Izvedi();
 
