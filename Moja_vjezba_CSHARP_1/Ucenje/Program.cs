@@ -2,7 +2,7 @@
 
 using Ucenje;
 
-//CiklicnaTablica.Izvedi();
+CiklicnaTablica.Izvedi();
 
 //E15Subota.Izvedi();
 

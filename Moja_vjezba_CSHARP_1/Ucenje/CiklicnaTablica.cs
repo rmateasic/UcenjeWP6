@@ -20,38 +20,38 @@ namespace Ucenje
             int vrijednost = 1;
             int max_vrijednost = redovi * stupci;
 
-            int desnaGranica = stupci - 1;
-            int donjaGranica = redovi - 1;
-            int gornjaGranica = 0;
-            int lijevaGranica = 0;
+            int prviRed = 0;
+            int prviStupac = 0;
+            int zadnjiStupac = stupci - 1;
+            int zadnjiRed = redovi - 1;
 
 
             while (vrijednost <= max_vrijednost)
             {
                 //1.dolje desno prema lijevo
-                for (int stup = desnaGranica; stup >= lijevaGranica && vrijednost <= max_vrijednost; stup--)
+                for (int stup = zadnjiStupac; stup >= prviStupac && vrijednost <= max_vrijednost; stup--)
                 {
-                    tablica[donjaGranica, stup] = vrijednost++;
+                    tablica[zadnjiRed, stup] = vrijednost++;
                 }
-                donjaGranica--;
+                zadnjiRed--;
                 //2.dolje lijevo prema gore
-                for (int redak = donjaGranica; redak >= gornjaGranica && vrijednost <= max_vrijednost; redak--)
+                for (int redak = zadnjiRed; redak >= prviRed && vrijednost <= max_vrijednost; redak--)
                 {
-                    tablica[redak, lijevaGranica] = vrijednost++;
+                    tablica[redak, prviStupac] = vrijednost++;
                 }
-                lijevaGranica++;
+                prviStupac++;
                 //3.gore lijevo prema desno
-                for (int stup = lijevaGranica; stup <= desnaGranica && vrijednost <= max_vrijednost; stup++)
+                for (int stup = prviStupac; stup <= zadnjiStupac && vrijednost <= max_vrijednost; stup++)
                 {
-                    tablica[gornjaGranica, stup] = vrijednost++;
+                    tablica[prviRed, stup] = vrijednost++;
                 }
-                gornjaGranica++;
+                prviRed++;
                 //4.gore desno prema dolje
-                for (int redak = gornjaGranica; redak <= donjaGranica && vrijednost <= max_vrijednost; redak++)
+                for (int redak = prviRed; redak <= zadnjiRed && vrijednost <= max_vrijednost; redak++)
                 {
-                    tablica[redak, desnaGranica] = vrijednost++;
+                    tablica[redak, zadnjiStupac] = vrijednost++;
                 }
-                desnaGranica--;
+                zadnjiStupac--;
             }
             // ispis tablice
             for (int redak = 0; redak < redovi; redak++)
