@@ -7,11 +7,9 @@ namespace Ucenje
         public static void Izvedi()
         {
 
-            Console.WriteLine("Upiši broj redova: ");
-            int redovi = int.Parse(Console.ReadLine());
+            int redovi = UcitajBrojRedova("Upiši broj redova: ");
 
-            Console.WriteLine("Upiši broj stupaca: ");
-            int stupci = int.Parse(Console.ReadLine());
+            int stupci = UcitajBrojStupaca("Upiši broj stupaca: ");
 
             int unesenaVrijednost = 0;
 
@@ -65,7 +63,58 @@ namespace Ucenje
 
             }
         }
+
+        public static int UcitajBrojRedova(string poruka)
+        {
+            while (true)
+            {
+                Console.WriteLine(poruka);
+
+                try
+                {
+                    int broj = int.Parse(Console.ReadLine());
+                    if (broj >= 2 && broj <= 50)
+                    {
+                        return broj;
+                    }
+                    else
+                    {
+                        Console.WriteLine("Minimalan broj redaka je 2, a maksimalan 50! ");
+                    }
+                }
+                catch
+                {
+                    Console.WriteLine("Problem kod učitanja broja!");
+                }
+
+            }
+        }
+        public static int UcitajBrojStupaca(string poruka)
+        {
+            while (true)
+            {
+                Console.WriteLine(poruka);
+
+                try
+                {
+                    int broj = int.Parse(Console.ReadLine());
+                    if (broj >= 2 && broj <= 50)
+                    {
+                        return broj;
+                    }
+                    else
+                    {
+                        Console.WriteLine("Minimalan broj stupaca je 2, a maksimalan 50! ");
+                    }
+                }
+                catch
+                {
+                    Console.WriteLine("Problem kod učitanja broja!");
+                }
+            }
+        }
     }
+
 
 }
   
