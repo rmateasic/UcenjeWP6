@@ -66,15 +66,64 @@ namespace Ucenje
                     Izbornik();
                     break;  
 
+                case 5:
+                    FibonaccijevNiz();
+                    Izbornik();
+                    break;
+
 
 
             }
         }
 
+        private static void FibonaccijevNiz()
+        {
+            NaslovPrograma("Fibonaccijev niz");
+            int n;
+
+            while (true)
+            {
+                try 
+                {
+                    n = E12Metode.UcitajCijeliBroj("Unesite broj n za ispis prvih n brojeva Fibonaccijeva niza (2 - 10): ");
+
+                    if (n < 2 || n > 10)
+                    {
+                        Console.WriteLine("Unešeni broj je izvan raspona, pokušajte ponovno!");
+                        continue;
+                    }
+                    break;
+                }
+                catch
+                {
+
+                }
+            }
+            int[] niz = new int[n];
+            niz[0] = 1;
+            niz[1] = 1;
+
+            for (int i = 2; i < n; i++)
+            {
+                niz[i] = niz[i - 1] + niz[i - 2];
+            }
+
+            if (n <= 4)
+            {
+                Console.Write("Prva {0} broja Fibonaccijeva niza: ", n);
+            }
+            else
+            {
+                Console.Write("Prvih {0} brojeva Fibonaccijeva niza: ", n);
+            }
+
+            Console.WriteLine(string.Join(", ", niz));
+            Console.ResetColor();
+        }
+
         private static void ProsjekOcjena()
         {
             NaslovPrograma("Prosjek ocjena");
-
             int brojOcjena;
 
             while (true)
@@ -83,6 +132,7 @@ namespace Ucenje
                 {
                     Console.WriteLine("Unesi željeni broj ocjena (najviše 10): ");
                     brojOcjena = int.Parse(Console.ReadLine());
+
                     if (brojOcjena < 1 || brojOcjena > 10)
                     {
                         Console.WriteLine("Nisi unio dobar broj, pokušaj ponovno!");
@@ -95,6 +145,7 @@ namespace Ucenje
                     Console.WriteLine("Nisi dobro unio broj!");
                 }
             }
+
             Console.WriteLine();
             Console.WriteLine("Broj ocjena je {0}. Sad unesi jednu po jednu ocjenu: ", brojOcjena);
 
@@ -103,11 +154,9 @@ namespace Ucenje
 
             for (int i = 0; i < brojOcjena; i++)
             {
-
                 int ocjena = E12Metode.UcitajCijeliBroj($"Unesi ocjenu broj {i + 1}: ");
                 niz[i] = ocjena;
                 sum += ocjena;
-
             }
 
             decimal prosjek = (decimal)sum / brojOcjena;
@@ -121,12 +170,9 @@ namespace Ucenje
 
         }
 
-        
-
         private static void ZbrojElemenataNiza()
         {
             NaslovPrograma("Zbroj elemenata niza");
-
             int velicinaNiza;
 
             while (true)
@@ -135,6 +181,7 @@ namespace Ucenje
                 {
                     Console.Write("Unesi željeni broj cijelih brojeva u nizu (2 - 20): ");
                     velicinaNiza = int.Parse(Console.ReadLine());
+
                     if (velicinaNiza < 2 || velicinaNiza > 20)
                     {
                         Console.WriteLine("Nisi unio dobar broj, pokušaj ponovno!");
@@ -149,6 +196,7 @@ namespace Ucenje
                 }
 
             }
+
             Console.WriteLine();
             Console.WriteLine("U redu, broj članova niza je {0}. Sad unesi jedan po jedan broj.", velicinaNiza);
 
@@ -179,6 +227,7 @@ namespace Ucenje
         {
             NaslovPrograma("Pozitivan ili negativan broj?");
             int i = E12Metode.UcitajCijeliBroj("Unesi cijeli broj:");
+
             if (i > 0)
             {
                 Console.WriteLine("Broj je pozitivan!");

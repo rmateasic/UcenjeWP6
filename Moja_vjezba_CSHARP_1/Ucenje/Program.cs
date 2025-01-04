@@ -4,7 +4,7 @@ using Ucenje;
 
 
 
-ZimskiZadatci.Izvedi();
+//ZimskiZadatci.Izvedi();
 
 //ProvjeraBroja.Izvedi();
 
