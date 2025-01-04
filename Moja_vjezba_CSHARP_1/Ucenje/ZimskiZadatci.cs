@@ -1,5 +1,6 @@
 ﻿
 
+
 namespace Ucenje
 {
     internal class ZimskiZadatci
@@ -60,10 +61,67 @@ namespace Ucenje
                     Izbornik();
                     break;
 
+                case 4:
+                    ProsjekOcjena();
+                    Izbornik();
+                    break;  
+
 
 
             }
         }
+
+        private static void ProsjekOcjena()
+        {
+            NaslovPrograma("Prosjek ocjena");
+
+            int brojOcjena;
+
+            while (true)
+            {
+                try
+                {
+                    Console.WriteLine("Unesi željeni broj ocjena (najviše 10): ");
+                    brojOcjena = int.Parse(Console.ReadLine());
+                    if (brojOcjena < 1 || brojOcjena > 10)
+                    {
+                        Console.WriteLine("Nisi unio dobar broj, pokušaj ponovno!");
+                        continue;
+                    }
+                    break;
+                }
+                catch
+                {
+                    Console.WriteLine("Nisi dobro unio broj!");
+                }
+            }
+            Console.WriteLine();
+            Console.WriteLine("Broj ocjena je {0}. Sad unesi jednu po jednu ocjenu: ", brojOcjena);
+
+            int[] niz = new int[brojOcjena];
+            int sum = 0;
+
+            for (int i = 0; i < brojOcjena; i++)
+            {
+
+                int ocjena = E12Metode.UcitajCijeliBroj($"Unesi ocjenu broj {i + 1}: ");
+                niz[i] = ocjena;
+                sum += ocjena;
+
+            }
+
+            decimal prosjek = (decimal)sum / brojOcjena;
+            prosjek = Math.Round(prosjek, 2);
+
+            Console.WriteLine();
+            Console.Write("Unio si sljedeće ocjene: ");
+            Console.WriteLine(string.Join(", ", niz));
+            Console.Write($"Prosjek ocjena je {prosjek}");
+            Console.WriteLine();
+
+        }
+
+        
 
         private static void ZbrojElemenataNiza()
         {
@@ -99,7 +157,7 @@ namespace Ucenje
 
             for (int i = 0; i < velicinaNiza; i++)
             {
-                int broj = E12Metode.UcitajCijeliBroj("Unesi {i + 1}. broj: ");
+                int broj = E12Metode.UcitajCijeliBroj($"Unesi {i + 1}. broj: ");
                 niz[i] = broj;
                 sum += broj;
             }
@@ -108,7 +166,7 @@ namespace Ucenje
             Console.WriteLine();
             Console.Write("Unio si sljedeći niz: ");
             Console.WriteLine(string.Join(", ", niz));
-            Console.WriteLine("Zbroj elemenata ovog niza je: ", sum);
+            Console.WriteLine($"Zbroj elemenata ovog niza je {sum}. ");
 
         }
 
