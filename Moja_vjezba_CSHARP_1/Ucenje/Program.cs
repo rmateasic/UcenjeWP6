@@ -4,6 +4,9 @@ using Ucenje;
 
 
 
+
+//GeneratorLozinki.Izvedi();
+
 //ZimskiZadatci.Izvedi();
 
 //ProvjeraBroja.Izvedi();
