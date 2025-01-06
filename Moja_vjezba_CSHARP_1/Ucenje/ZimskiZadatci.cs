@@ -1,6 +1,8 @@
 ﻿
 
 
+using System;
+
 namespace Ucenje
 {
     internal class ZimskiZadatci
@@ -21,7 +23,12 @@ namespace Ucenje
             "Pozitivan ili negativan broj?",
             "Zbroj elemenata niza",
             "Prosjek ocjena",
-            "Fibonaccijev niz"
+            "Fibonaccijev niz",
+            "Preokret stringa",
+            "Brojanje samoglasnika",
+            "Pretvorba temperature",
+            "Sortiranje niza",
+            "Kalkulator"
             };
 
             Console.WriteLine();
@@ -71,9 +78,50 @@ namespace Ucenje
                     Izbornik();
                     break;
 
+                case 6:
+                    PreokretStringa();
+                    Izbornik();
+                    break;  
+
 
 
             }
+        }
+
+        private static void PreokretStringa()
+        {
+            NaslovPrograma("Preokret stringa");
+
+            string unos;
+
+            while (true)
+            {
+                try
+                {
+                    unos = E12Metode.UcitajString("Unesite pojam ili niz znakova (2-20): ");
+
+                    if (unos.Length < 2 || unos.Length > 20)
+                    {
+                        Console.WriteLine("Broj znakova je manji/veći od dozvoljenog, pokušajte ponovno!");
+                        continue;
+                    }
+                    break;
+                }
+                catch
+                {
+
+                }
+            }
+            char[] preokret = new char[unos.Length];
+
+            for (int i = 0; i < unos.Length; i++)
+            {
+                preokret[i] = unos[unos.Length - 1 - i];
+            }
+
+            Console.Write("Obrnuti redoslijed znakova je: ");
+            Console.WriteLine(string.Concat(preokret));
+
         }
 
         private static void FibonaccijevNiz()
@@ -118,7 +166,6 @@ namespace Ucenje
             }
 
             Console.WriteLine(string.Join(", ", niz));
-            Console.ResetColor();
         }
 
         private static void ProsjekOcjena()
