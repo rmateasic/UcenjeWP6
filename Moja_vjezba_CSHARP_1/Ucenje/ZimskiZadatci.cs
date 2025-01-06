@@ -81,11 +81,190 @@ namespace Ucenje
                 case 6:
                     PreokretStringa();
                     Izbornik();
-                    break;  
+                    break;
+
+                case 7:
+                    BrojanjeSamoglasnika();
+                    Izbornik();
+                    break;
+
+                case 8:
+                    PretvorbaTemperature();
+                    Izbornik();
+                    break;
+
+                case 9:
+                    SortiranjeNiza();
+                    Izbornik();
+                    break;
+
+                case 10:
+                    Kalkulator();
+                    Izbornik();
+                    break;
 
 
 
             }
+        }
+
+        private static void Kalkulator()
+        {
+            NaslovPrograma("Kalkulator");
+            Console.WriteLine();
+
+            Console.WriteLine();
+            Console.WriteLine("IZBORNIK");
+            Console.WriteLine();
+            Console.WriteLine("+ (zbrajanje)");
+            Console.WriteLine("- (oduzimanje)");
+            Console.WriteLine("* (množenje)");
+            Console.WriteLine("/ (dijeljenje)");
+            Console.WriteLine();
+
+            bool izlaz = false;
+
+            while (!izlaz)
+            {
+                double x = E12Metode.UcitajCijeliBroj("Unesite prvi broj: ");
+                double y = E12Metode.UcitajCijeliBroj("Unesite drugi broj: ");
+                Console.Write("Odaberite operaciju (+, -, *, / (za izlaz upišite 0): ");
+                char operacija = Console.ReadKey().KeyChar;
+                Console.WriteLine();
+
+                switch (operacija)
+                {
+                    case '+':
+
+                        Console.WriteLine();
+                        Console.WriteLine("{0} + {1} = {2}", x, y, x + y);
+                        Console.WriteLine();
+                        break;
+
+                    case '-':
+
+                        Console.WriteLine();
+                        Console.WriteLine("{0} - {1} = {2}", x, y, x - y);
+                        Console.WriteLine();
+                        break;
+
+                    case '*':
+
+                        Console.WriteLine();
+                        Console.WriteLine("{0} * {1} = {2}", x, y, x * y);
+                        Console.WriteLine();
+                        break;
+
+                    case '/':
+
+                        Console.WriteLine();
+                        Console.WriteLine("{0} / {1} = {2}", x, y, Math.Round(x / y, 2));
+                        Console.WriteLine();
+                        break;
+
+                    case '0':
+                        Console.WriteLine();
+                        Console.WriteLine("Hvala na korištenju kalkulatora i doviđenja!");
+                        Console.WriteLine();
+
+                        izlaz = true;
+                        break;
+
+                    default:
+                        Console.WriteLine("Nepoznata opcija, pokušajte ponovno!");
+                        break;
+                }
+            }
+        }
+
+        private static void SortiranjeNiza()
+        {
+            NaslovPrograma("Sortiranje niza");
+
+            int brojBrojeva = E12Metode.UcitajCijeliBroj("Koliko brojeva želite sortirati?  ");
+            int[] brojevi = new int[brojBrojeva];
+
+            Console.WriteLine("Unesite {0} brojeva u niz.", brojBrojeva);
+
+            for (int i = 0; i < brojBrojeva; i++)
+            {
+                int broj = E12Metode.UcitajCijeliBroj($"Unesite {i + 1}. broj: ");
+                brojevi[i] = broj;
+            }
+
+            Console.WriteLine();
+            Console.Write("Unijeli ste: ");
+            Console.WriteLine(string.Join(", ", brojevi));
+            Console.WriteLine();
+            Console.Write("Niz sortiran uzlazno: ");
+            Array.Sort(brojevi);
+            Console.Write(string.Join(", ", brojevi));
+            Console.WriteLine();
+            Console.Write("Niz sortiran silazno: ");
+            Array.Reverse(brojevi);
+            Console.Write(string.Join(", ", brojevi));
+            Console.WriteLine();
+
+        }
+
+        private static void PretvorbaTemperature()
+        {
+            NaslovPrograma("Pretvorba temperature");
+
+            Console.WriteLine();
+            Console.WriteLine("IZBORNIK");
+            Console.WriteLine("1. Pretvorba °C u °F");
+            Console.WriteLine("2. Pretvorba °F u °C ");
+            Console.WriteLine();
+            switch (E12Metode.UcitajCijeliBroj("Odaberite opciju pretvorbe temperature: ", 0, 2))
+            {
+                case 0:
+                    break;
+                case 1:
+                    Console.WriteLine("1. Pretvorba °C u °F");
+                    CelzijFahrenheit();
+                    break;
+                case 2:
+                    Console.WriteLine("2. Pretvorba °F u °C");
+                    FahrenheitCelzij();
+                    break;
+            }
+        }
+
+        private static void FahrenheitCelzij()
+        {
+            double fahrenheit = E12Metode.UcitajCijeliBroj("Unesite temperaturu u °F: ");
+            double celsius = (fahrenheit - 32) / 1.8;
+            Console.WriteLine("{0}°F = {1}°C", fahrenheit, celsius);
+        }
+
+        private static void CelzijFahrenheit()
+        {
+            double celsius = E12Metode.UcitajCijeliBroj("Unesite temperaturu u °C: ");
+            double fahrenheit = (celsius * 1.8) + 32;
+            Console.WriteLine("{0}°C = {1}°F", celsius, fahrenheit);
+        }
+
+
+        private static void BrojanjeSamoglasnika()
+        {
+            NaslovPrograma("Brojanje samoglasnika");
+
+            int sum = 0;
+
+            string[] samoglasnici = ["a", "e", "i", "o", "u"];
+            string upis = E12Metode.UcitajString("Unesite riječ ili rečenicu: ");
+
+            foreach (char slovo in upis)
+            {
+                if (String.Join("", samoglasnici).Contains(slovo))
+                {
+                    sum += 1;
+                }
+            }
+
+            Console.WriteLine("U vašem upisu ima {0} ", sum + " samoglasnika.");
+   
         }
 
         private static void PreokretStringa()
