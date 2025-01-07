@@ -62,7 +62,7 @@ namespace Ucenje
 
         }
 
-        /*private static int Zbroji(int broj)
+        private static int Zbroji(int broj)
        
         {
             if (broj == 1)
@@ -72,7 +72,7 @@ namespace Ucenje
             return broj + Zbroji(broj - 1);
         }
 
-        //100 + 99 + ...+1*/
+        //100 + 99 + ...+1
 
 
 
