@@ -3,7 +3,7 @@
 using Ucenje;
 
 
-
+//LjubavniKalkulator.Izvedi();
 
 //GeneratorLozinki.Izvedi();
 
