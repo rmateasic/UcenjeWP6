@@ -10,5 +10,9 @@ namespace Ucenje.E17KlasaObjekt.ZavrsniRad
     {
         public int Sifra { get; set; }
 
+        public string Naziv { get; set; } = "";
+
+        public string Zemlja { get; set; } = "";
+
     }
 }
