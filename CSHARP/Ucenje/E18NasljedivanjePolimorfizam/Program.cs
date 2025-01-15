@@ -13,6 +13,7 @@ namespace Ucenje.E18NasljedivanjePolimorfizam
         public Program()
         {
             Console.WriteLine("E18");
+
             var smjer = new Smjer() { Sifra = 1, Naziv = "Web programiranje" };
 
             Console.WriteLine(smjer); // kada se ispisuje cijeli objekt izvodi se metoda toString na klasama od dolje prema gore (zadnja je Object)
