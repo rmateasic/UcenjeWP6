@@ -15,14 +15,14 @@ namespace Ucenje.E18NasljedivanjePolimorfizam
             Console.WriteLine("E18");
             var smjer = new Smjer() { Sifra = 1, Naziv = "Web programiranje" };
 
-            Console.WriteLine(smjer); // kada se ispisuje cijeli objekt izvodi se metoda
+            Console.WriteLine(smjer); // kada se ispisuje cijeli objekt izvodi se metoda toString na klasama od dolje prema gore (zadnja je Object)
 
             var osoba = new Osoba() { Sifra = 1, Ime = "Pero", Prezime = "Perić" };
 
             Console.WriteLine(osoba);
 
 
-            // string je immutable
+            // string je immutable https://learn.microsoft.com/en-us/dotnet/csharp/programming-guide/strings/
             string s1 = "AA";
 
             Console.WriteLine(s1.GetHashCode()); // hashcode je reprezentant memorijske lokacije
