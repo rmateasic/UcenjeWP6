@@ -3,11 +3,10 @@
 using Ucenje;
 
 
-
+new Ucenje.E18NasljedivanjePolimorfizam.Program();
 
 // nova instanca klase program
-new Ucenje.E17KlasaObjekt.Program();
-
+//new Ucenje.E17KlasaObjekt.Program();
 
 //E14Vjezbanje.Izvedi();
 
