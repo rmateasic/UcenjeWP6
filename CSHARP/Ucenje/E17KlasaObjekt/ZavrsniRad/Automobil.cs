@@ -6,9 +6,8 @@ using System.Threading.Tasks;
 
 namespace Ucenje.E17KlasaObjekt.ZavrsniRad
 {
-    public class Automobil
+    public class Automobil : Entitet
     {
-        public int Sifra { get; set; }
 
         public string NazivAuta { get; set; } = "";
 
