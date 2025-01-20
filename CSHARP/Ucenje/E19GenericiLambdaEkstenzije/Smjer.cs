@@ -17,10 +17,10 @@ namespace Ucenje.E19GenericiLambdaEkstenzije
 
         public void OdradiPosao()
         {
-           // kasnije ću. NIKAD NEĆEŠ i to ima svoj naziv, Technical Debt
+            // kasnije ću. NIKAD NEĆEŠ i to ima svoj naziv, Technical Debt https://www.productplan.com/glossary/technical-debt/
         }
 
-        // atributi služe za definiranje dodatnih podataka trećoj strani
+        // atributi služe za definiranje dodatnih podataka trećoj strani https://mbarkt3sto.hashnode.dev/deprecation-in-c
         [Obsolete("Ova metoda je depricated")]
 
         public string? StariNaziv()
