@@ -73,6 +73,99 @@ namespace Ucenje.E19GenericiLambdaEkstenzije
                 Console.WriteLine(smjer.Naziv);
             }
 
+            // kreirajte listu datuma
+            // u listu stavite datum svog rođenja i današnji datum
+
+            var datumi = new List<DateTime>();
+
+            datumi.Add(new DateTime(1976, 3, 3));
+
+            datumi.Add(DateTime. Now);
+
+            foreach (var d in datumi)
+            {
+                Console.WriteLine(d);
+            }
+
+            // lambda izrazi
+
+            Console.WriteLine(KlasicnaMetoda(5, 5));
+
+            // =>  lambda
+
+            // ovdje sada lagano C # odskače od OOP principa
+
+            var Zbroj = (int a, int b) => a + b; // gledajući sa ove linije Zbroj je varijabla
+
+            Console.WriteLine(Zbroj(5, 5)); // gledajući sa ove linije Zbroj je metoda
+
+            // kompleksnija sintaksa
+
+            var Algoritam = (int x, int y) =>
+            {
+                var z = 0;
+                z = ++x;
+                y += z;
+                return x + y + z;
+            };
+
+            Console.WriteLine(Algoritam(2, 3));
+
+            // parnost broja pomoću lambda izraza
+
+            var Parni = (int i) => i % 2 == 0;
+
+            Console.WriteLine(Parni(7) ? "Parni" : "Neparni");
+
+            // ekstenzije - to tek odskače od OOp-a
+
+            String ime = "Ana";
+
+            Console.WriteLine(ime.LastOrDefault());
+
+            Console.WriteLine(smjerovi.LastOrDefault());
+
+            // korištenje vlastite ekstenzije
+
+            s.Ispisi();
+
+            var p = new Polaznik() { Sifra = 7, Ime = "Pero" };
+
+            p.Ispisi();
+
+            // Zadnji krik ne OPP-a u OOP jeziku je definiranje objekta on the fly
+
+            var nesto = new
+            {
+                Ime = "Pero",
+                Grad = "Osijek",
+                Smjer = s
+            };
+
+            Console.WriteLine(nesto);
+
+            // Na frontend će za gornji on the fly objekt doći slijedeći JSON zapis
+
+            /*
+             
+            {
+                "ime": "Pero",
+                "grad": "Osijek",
+                "smjer": {
+                    "sifra": 1
+                    "naziv": "Serviser"
+                }
+            }
+                
+
+            */
+
+
+        }
+
+        private int KlasicnaMetoda(int a, int b)
+        {
+            return a + b;
         }
     }
 }
