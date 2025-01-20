@@ -3,6 +3,8 @@
 using Ucenje;
 
 
+new Ucenje.E19GenericiLambdaEkstenzije.Program();
+
 //new Ucenje.E18NasljedivanjePolimorfizam.Program("E18");
 
 // nova instanca klase program
