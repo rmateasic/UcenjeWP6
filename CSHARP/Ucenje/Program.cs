@@ -2,13 +2,15 @@
 
 using Ucenje;
 
+new Ucenje.E20KonzolnaAplikacija.Izbornik();
 
-new Ucenje.E19GenericiLambdaEkstenzije.Program();
+//new Ucenje.E19GenericiLambdaEkstenzije.Program();
 
 //new Ucenje.E18NasljedivanjePolimorfizam.Program("E18");
 
 // nova instanca klase program
 //new Ucenje.E17KlasaObjekt.Program();
+
 
 //E14Vjezbanje.Izvedi();
 
@@ -22,16 +24,18 @@ new Ucenje.E19GenericiLambdaEkstenzije.Program();
 
 //E13Rekurzija.Izvedi();
 
+
 //E12Z1.Izvedi();
 
+
 //E12Metode.Izvedi();
+
 
 //E11Z1LOSE.Izvedi();
 
 //E11TryCatch.Izvedi();
 
 //E10Z1.Izvedi();
-
 //E10ForeachPetlja.Izvedi();
 
 //E09Z2.Izvedi();
