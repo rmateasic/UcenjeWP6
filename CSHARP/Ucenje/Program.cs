@@ -2,7 +2,7 @@
 
 using Ucenje;
 
-//new Ucenje.E20KonzolnaAplikacija.Izbornik();
+new Ucenje.E20KonzolnaAplikacija.Izbornik();
 
 //new Ucenje.E19GenericiLambdaEkstenzije.Program();
 
