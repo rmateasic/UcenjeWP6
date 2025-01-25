@@ -100,6 +100,8 @@
             }
         }
 
+
+
         internal static string UcitajString(string poruka, int max, bool obavezno, string StaraVrijednost)
         {
             string s;
