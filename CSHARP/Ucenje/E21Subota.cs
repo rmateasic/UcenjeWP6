@@ -13,7 +13,44 @@ namespace Ucenje
             //Console.WriteLine("Hello from E21Subota");
 
             //SlucajniBrojevi();
-            SlucajniDatumi();
+            //SlucajniDatumi();
+            Ljubav();
+
+        }
+
+        private void Ljubav()
+        {
+            var ona = "Marta";
+            var on = "Manuel";
+
+            var izraz = ona.Trim().ToLower() + on.Trim().ToLower();
+
+            Console.WriteLine(izraz);
+
+            int[] brojevi = new int[izraz.Length];
+
+            var ponovilose = 0;
+
+            for (int i = 0; i < izraz.Length; i++)
+            {
+                ponovilose = 0;
+
+                for (int j = 0; j < izraz.Length; j++)
+                {
+                    if (izraz[i] == izraz[j])
+                    {
+                        ponovilose++;
+                    }
+                }
+
+                brojevi[i] = ponovilose;
+
+
+
+            }
+
+            Console.WriteLine(string.Join('|', izraz.ToArray()));
+            Console.WriteLine(string.Join('|', brojevi));
 
         }
 
