@@ -12,7 +12,8 @@ namespace Ucenje
         {
             //Console.WriteLine("Hello from E21Subota");
 
-            SlucajniBrojevi();
+            //SlucajniBrojevi();
+            SlucajniDatumi();
 
         }
 
@@ -24,6 +25,28 @@ namespace Ucenje
             {
                 Console.WriteLine(rnd.Next(20, 31));
             }
+        }
+
+        private void SlucajniDatumi()
+        {
+            var rnd = new Random();
+
+
+            for (int i = 0; i < 100; i++)
+            {
+
+                try
+                {
+                    var d = new DateTime(2023, rnd.Next(1, 13), rnd.Next(1, 32));
+                    Console.WriteLine((i + 1) + ":" + d.ToString("yyyy-MM-dd"));
+                }
+                catch
+                {
+                    i--;
+                }
+            }
+
+
         }
     }
 
