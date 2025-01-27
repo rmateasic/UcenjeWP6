@@ -6,9 +6,8 @@ using System.Threading.Tasks;
 
 namespace Ucenje.E17KlasaObjekt.ZavrsniRad
 {
-    public class Prozvodjac
+    public class Prozvodjac : Entitet
     {
-        public int Sifra { get; set; }
 
         public string Naziv { get; set; } = "";
 

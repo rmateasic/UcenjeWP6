@@ -4,12 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Ucenje.E17KlasaObjekt.ZavrsniRad
+namespace Ucenje.E19GenericiLambdaEkstenzije
 {
-    public class VrstaAuta : Entitet
+    public abstract class Entitet
     {
+        public int Sifra { get; set; }
 
-        public string Naziv { get; set; } = "";
 
     }
 }
