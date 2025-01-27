@@ -11,7 +11,7 @@ namespace EdunovaAPP.Models
 
         public DateTime? IzvodiSeOd { get; set; }
 
-        public bool Vaucer { get; set; }
+        public bool? Vaucer { get; set; }
 
 
     }

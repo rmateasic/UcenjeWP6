@@ -1,3 +1,6 @@
+using EdunovaAPP.Data;
+using Microsoft.EntityFrameworkCore;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -7,6 +10,13 @@ builder.Services.AddControllers();
 builder.Services.AddOpenApi();
 
 builder.Services.AddSwaggerGen();
+
+// dodavanje konteksta baze podataka - dependency injection
+
+builder.Services.AddDbContext<EdunovaContekst>(options =>
+{
+    options.UseSqlServer(builder.Configuration.GetConnectionString("EdunovaContext"));
+});
 
 var app = builder.Build();
 
@@ -21,7 +31,11 @@ app.UseAuthorization();
 // dodati ove dvije linije za swager
 app.UseSwagger();
 
-app.UseSwaggerUI();
+app.UseSwaggerUI(o =>
+{
+    o.EnableTryItOutByDefault();
+    o.ConfigObject.AdditionalItems.Add("requestSnippetsEnabled", true);
+});
 
 app.MapControllers();
 
